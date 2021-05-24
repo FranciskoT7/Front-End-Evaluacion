@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+/*Titulo*/
+#titulo{
+    background: rgb(11,6,101);
+background: linear-gradient(180deg, rgba(11,6,101,1) 3%, rgba(18,17,97,1) 29%, rgba(9,9,121,1) 48%, rgba(9,15,125,1) 100%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    padding: .5px;
+    color: white;
+}
+/* Tabla */
+.seccion{
+    display: flex;
+    margin: 50px auto;
+}
+.titulo1:hover{
+    text-decoration: underline gray;
+}
+.contenedor{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    border-radius: 7px;
+}
+.encabezados th{
+    background-color: white;
+}
+table{
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 7px;
+    border-collapse: collapse;
+    border: solid 1px lightgray;
+}
+tr:nth-child(odd){
+    background-color: whitesmoke;
+}
+/* Responsive */
+@media (max-width:780px) {
+    table{
+        width: 100%;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+    thead{
+        display: none;
+    }
+    td[data-campo]{
+        display: flex;
+        border: none;
+    }
+    td[data-campo]::before{
+        content: attr(data-campo);
+        width: 50%;
+    }
+}
+
+
+/*Agregar datos*/
+/* .camposFormulario{
+    margin: 17px;
+}
+#botonAgregar{
+    padding: 17px;
+    color: white;
+    border: none;
+    background-color: rgb(60, 190, 233);
+    margin: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#botonAgregar:hover{
+    background-color: rgb(46, 140, 172);
+}
+label{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+
+}
+input{
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2);
+    width: 50%;
+    height: 27px;
+}
+.contenedor2{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    border-radius: 7px;
+}
+ */
